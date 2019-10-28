@@ -3,8 +3,6 @@ body {
   font-family: sans-serif;
 }
 
-.main {}
-
 .section {
   display: grid;
   justify-content: center;
@@ -13,21 +11,7 @@ body {
   border-bottom: 2px dashed #ccc;
 }
 
-/* .section:nth-of-type(1) {
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-areas:
-    "header header header"
-    ". box ."
-    "btn1 btn2 btn3"
-    ". list .";
-  justify-content: center;
-  justify-items: center;
-  grid-gap: 15px;
-} */
-
 header {
-  grid-area: header;
   text-align: center;
 }
 
@@ -48,12 +32,20 @@ header {
 }
 
 .button-cool {
-  @extend .button;
+  padding: 15px 20px;
+  background-color: #545b62;
+  border: 0px;
+  color: #fff;
+  font-size: 1rem;
   background-color: #007bff;
 }
 
 .button-hot {
-  @extend .button;
+  padding: 15px 20px;
+  background-color: #545b62;
+  border: 0px;
+  color: #fff;
+  font-size: 1rem;
   background-color: #bd2130;
 }
 
@@ -79,7 +71,7 @@ li {
 
 
 .highlight {
-  outline: rgba(#ffc107, 0.5) solid 10px;
+  outline: rgba(255, 193, 7, 0.5) solid 10px;
 }
 
 .boxes {
